@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+Dans ce point de contrôle, vous allez construire des cartes de joueur FIFA.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Instructions
 
-In the project directory, you can run:
+Créez un projet à l'aide de create-react-app.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Créez un fichier appelé players.js, qui contiendra un tableau d'objets JSON contenant les détails des joueurs (au moins quatre joueurs).
+Faites preuve de créativité dans votre choix de joueurs ! Vous pouvez choisir qui vous voulez !
+Les attributs pour chaque joueur sont le nom, l'équipe, la nationalité, le numéro de maillot, l'âge et une URL d'image pour le joueur.
+Créez un fichier appelé Player.js qui contient le composant joueur.
+Le composant Player doit rendre une carte react-bootstrap. La carte affichera tous les attributs pour chaque joueur défini dans players.js.
+Déstructurez tous les attributs pour le composant Player.
+Créez un composant appelé PlayersList.js
+Importez à l'intérieur de PlayerList.js, le composant Player et les données des joueurs à partir de players.js.
+Affichez tous les joueurs à l'intérieur de PlayerList.js, en parcourant tous les éléments du tableau de joueurs (consultez la fonction .map).
+Lors du parcours des joueurs, transmettez les props au composant Player (recherchez l'opérateur de propagation si vous souhaitez l'utiliser).
+N'oubliez pas de définir des props par défaut pour chaque attribut (n'hésitez pas à définir des props par défaut).
+Utilisez un style inline pour le composant Player.
+Importez PlayerList.js dans App.js (composant racine) et affichez PlayerList.
